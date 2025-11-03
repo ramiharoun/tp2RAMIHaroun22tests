@@ -44,7 +44,7 @@ public class Test4 {
         ChatModel model = GoogleAiGeminiChatModel.builder()
                 .apiKey(llmKey)
                 .modelName("gemini-2.5-flash")
-                .temperature(0.7)
+                .temperature(0.3)
                 .build();
 
         // Chargement du document, sous la forme d'embeddings, dans une base vectorielle en mémoire
