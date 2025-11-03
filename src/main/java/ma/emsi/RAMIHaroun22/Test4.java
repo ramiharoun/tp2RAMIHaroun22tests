@@ -36,6 +36,7 @@ public class Test4 {
         root.setLevel(Level.SEVERE);
         for (var h : root.getHandlers()) h.setLevel(Level.SEVERE);
 
+
         String llmKey = System.getenv("GEMINI_KEY");
 
         // Mettre une température qui ne dépasse pas 0,3.
