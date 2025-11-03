@@ -36,8 +36,10 @@ public class Test6 {
         ChatModel model = GoogleAiGeminiChatModel.builder()
                 .apiKey(llmKey)
                 .modelName("gemini-2.5-flash")
+                .logRequestsAndResponses(true)
                 .temperature(0.3) //j'essaie de faire un peu varier entre 0.3 et 0.4 selon le test
                 .build();
+
 
         Assistant assistant =
                 AiServices.builder(Assistant.class)
